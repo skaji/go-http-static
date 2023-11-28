@@ -18,6 +18,11 @@ func main() {
 	showVersion := flag.Bool("v", false, "show version and exit")
 	flag.Parse()
 
+	if flag.NArg() > 0 {
+		fmt.Fprintln(os.Stderr, "too many arguments")
+		os.Exit(1)
+	}
+
 	if *showVersion {
 		fmt.Println(version)
 		os.Exit(0)
