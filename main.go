@@ -29,7 +29,7 @@ func main() {
 	}
 
 	if (*sslCrt == "") != (*sslKey == "") {
-		fmt.Fprintln(os.Stderr, "must specify both -sslCrt and -sslKey")
+		fmt.Fprintln(os.Stderr, "must specify both -ssl-crt and -ssl-key")
 		os.Exit(1)
 	}
 
