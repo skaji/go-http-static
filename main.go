@@ -41,7 +41,6 @@ func main() {
 	if *sslCrt != "" && *sslKey != "" {
 		fmt.Printf("Listen https://localhost:%d\n", *port)
 		err = server.ListenAndServeTLS(*sslCrt, *sslKey)
-
 	} else {
 		fmt.Printf("Listen http://localhost:%d\n", *port)
 		err = server.ListenAndServe()
