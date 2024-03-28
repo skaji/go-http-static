@@ -1,6 +1,6 @@
 module github.com/skaji/go-http-static
 
-go 1.21
+go 1.22.1
 
 require github.com/lestrrat-go/apache-logformat/v2 v2.0.6
 
